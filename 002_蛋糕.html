@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蛋糕商城注册</title>
+    <!-- 内嵌CSS样式 -->
+    <style>
+        /* 导航栏样式 */
+        nav {
+            background-color: #f8f9fa;
+            border-bottom: 2px solid #ccc;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #ddd;
+        }
+
+        /* 注册表单样式 */
+        form {
+            margin: 20px auto;
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* 友情链接样式 */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航内容 -->
+    <nav>
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">商品分类</a></li>
+            <li><a href="#">热销</a></li>
+            <li><a href="#">新品</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">搜索</a></li>
+            <li><a href="#">购物车</a></li>
+        </ul>
+    </nav>
+
+    <!-- 注册表单 -->
+    <form>
+        <h2>用户注册</h2>
+        <label for="username">用户名：</label><br>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">密码：</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <input type="submit" value="注册">
+    </form>
+
+    <!-- 友情链接 -->
+    <footer>
+        <p>友情链接：xxx蛋糕厂 | xxx饼店 | xxx糕点店</p>
+    </footer>
+</body>
+</html>
+
+<!-- 
+    导航内容部分，使用 nav 标签实现导航栏，利用内嵌 CSS 对导航栏进行样式调整，包括背景颜色、边界、间距、文本样式等。
+    注册表单部分，使用 form 标签创建用户注册表单，利用内嵌 CSS 对表单元素进行样式调整，包括表单元素的宽度、边距、背景颜色、边框、圆角等。
+    友情链接部分，使用 footer 标签创建底部区域，利用内嵌 CSS 对底部区域进行样式调整，包括背景颜色、文本颜色、文本居中、边距等。
+ -->

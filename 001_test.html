@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>橘子小明</title>
+    <style>
+        /* 在这里添加 CSS 样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript 练习</h1>
+    <p>在下面的输入框中输入您的 JavaScript 代码，并点击运行按钮来执行。</p>
+    <textarea id="input" rows="6" cols="50"></textarea><br>
+    <button id="runButton">运行</button>
+    <div id="output"></div>
+
+    <script src="001_test.js"></script>
+</body>
+</html>
+
+<!-- 
+    外链式
+    这样做的好处是将JavaScript代码与HTML代码分离，使代码更易于维护和管理。
+    在HTML文件中，通过<script src="exercise.js"></script>将JavaScript文件链接到HTML页面中。
+    在JavaScript文件中，使用document.addEventListener("DOMContentLoaded", 
+    function() {...})来确保页面加载完毕后执行JavaScript代码。
+ -->

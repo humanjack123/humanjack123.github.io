@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>橘子小明</title>
+    <style>
+        /* 在这里添加 CSS 样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript 练习</h1>
+    <p>在下面的输入框中输入您的 JavaScript 代码，并点击运行按钮来执行。</p>
+    <textarea id="input" rows="6" cols="50"></textarea><br>
+    <button onclick="runCode()">运行</button>
+    <div id="output"></div>
+
+    <script>
+        // 在这里添加 JavaScript 代码
+        function runCode() {
+            var code = document.getElementById("input").value;
+            var outputDiv = document.getElementById("output");
+
+            try {
+                var result = eval(code);
+                outputDiv.innerHTML = "<pre>" + result + "</pre>";
+            } catch (error) {
+                outputDiv.innerHTML = "<pre style='color: red;'>Error: " + error.message + "</pre>";
+            }
+        }
+    </script>
+</body>
+</html>
+
+<!-- 这个HTML代码创建了一个简单的网页，其中包含一个用于输入JavaScript代码的文本框、
+    一个“运行”按钮以及一个用于显示输出结果的区域。用户可以在文本框中输入JavaScript代码，
+    并点击“运行”按钮来执行。执行结果会显示在输出区域中。
+
+ -->
